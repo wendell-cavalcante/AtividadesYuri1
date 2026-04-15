@@ -1,0 +1,29 @@
+programa {
+
+    funcao inicio() {
+
+        cadeia nomeCripto
+        real variacaoPercentual
+
+        escreva("Digite o nome da criptomoeda:\n")
+        leia(nomeCripto)
+
+        escreva("Digite a variação percentual nas últimas 24h:\n")
+        leia(variacaoPercentual)
+
+        se (variacaoPercentual > 10) {
+
+            escreva(nomeCripto, " é uma criptomoeda de Alta Relevante\n")
+
+        } senao se (variacaoPercentual < -10) {
+
+            escreva(nomeCripto, " é uma criptomoeda de Correção Forte\n")
+
+        } senao {
+
+            escreva(nomeCripto, " é uma criptomoeda de Estabilidade\n")
+
+        }
+
+    }
+}
