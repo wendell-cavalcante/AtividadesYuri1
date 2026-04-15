@@ -1,0 +1,87 @@
+programa {
+
+    funcao inicio() {
+
+        inteiro produto1 = 550
+        inteiro produto2 = 350
+        inteiro produto3 = 70
+
+        inteiro escolhaProduto
+        inteiro escolhaSegundoProduto
+        inteiro maisProdutos
+        inteiro valorTotal = 0
+
+        escreva("Web Store\n")
+        escreva("Lista de produtos disponíveis:\n")
+        escreva("1 - Mala grande: R$ ", produto1, "\n")
+        escreva("2 - Mala média: R$ ", produto2, "\n")
+        escreva("3 - Bolsa de mão: R$ ", produto3, "\n")
+
+        escreva("Qual produto você deseja comprar? (Digite o número do produto)\n")
+        leia(escolhaProduto)
+
+        se (escolhaProduto < 1 ou escolhaProduto > 3) {
+            escreva("Produto inválido\n")
+            retorne
+        }
+
+        escolha (escolhaProduto) {
+            caso 1:
+                valorTotal = produto1
+                pare
+            caso 2:
+                valorTotal = produto2
+                pare
+            caso 3:
+                valorTotal = produto3
+                pare
+            caso contrario:
+                escreva("Produto inválido\n")
+                retorne
+        }
+
+        escreva("Deseja adquirir mais algum produto? (Digite 1 para sim ou 0 para não)\n")
+        leia(maisProdutos)
+
+        se (maisProdutos == 1) {
+
+            escreva("Qual produto você deseja comprar? (Digite o número do produto)\n")
+            leia(escolhaSegundoProduto)
+
+            escolha (escolhaSegundoProduto) {
+                caso 1:
+                    valorTotal = valorTotal + produto1
+                    pare
+                caso 2:
+                    valorTotal = valorTotal + produto2
+                    pare
+                caso 3:
+                    valorTotal = valorTotal + produto3
+                    pare
+                caso contrario:
+                    escreva("Produto inválido\n")
+                    retorne
+            }
+        }
+
+        se (valorTotal > 500) {
+
+            escreva("Valor total da compra: R$ ", valorTotal, "\n")
+            escreva("Parabéns! Você recebeu um cashback de 10%: R$ ", valorTotal * 0.10, "\n")
+            escreva("Valor total da compra com cashback: R$ ", valorTotal - (valorTotal * 0.10), "\n")
+
+        } senao se (valorTotal >= 200 e valorTotal <= 500) {
+
+            escreva("Valor total da compra: R$ ", valorTotal, "\n")
+            escreva("Você recebeu um cashback de 5%: R$ ", valorTotal * 0.05, "\n")
+            escreva("Valor total da compra com cashback: R$ ", valorTotal - (valorTotal * 0.05), "\n")
+
+        } senao {
+
+            escreva("Infelizmente, você não recebeu cashback para esta compra.\n")
+            escreva("Valor total da compra: R$ ", valorTotal, "\n")
+
+        }
+
+    }
+}
