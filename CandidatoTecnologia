@@ -1,0 +1,35 @@
+programa {
+
+    funcao inicio() {
+
+        inteiro idade
+        inteiro projetosGithub
+
+        escreva("Filtro de Candidato em Tecnologia\n")
+        escreva("Olá, por favor informe a sua idade:\n")
+
+        leia(idade)
+
+        se (idade >= 18) {
+
+            escreva("Quantos projetos prontos você tem em seu GitHub?\n")
+            leia(projetosGithub)
+
+            se (projetosGithub >= 5) {
+
+                escreva("Parabéns você foi aprovado em nosso programa\n")
+
+            } senao {
+
+                escreva("Infelizmente você não possui os requisitos para fazer parte do nosso programa.\n")
+
+            }
+
+        } senao {
+
+            escreva("É necessário ter 18 anos ou mais para se inscrever em nosso programa\n")
+
+        }
+
+    }
+}
