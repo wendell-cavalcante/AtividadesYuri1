@@ -1,0 +1,27 @@
+programa {
+
+    funcao inicio() {
+
+        inteiro idade
+
+        escreva("Categorização de Atletas de E-sports\n")
+        escreva("Olá, por favor informe a sua idade:\n")
+
+        leia(idade)
+
+        se (idade >= 18) {
+
+            escreva("Você é um atleta profissional de League of Legends\n")
+
+        } senao se (idade >= 15) {
+
+            escreva("Você é um atleta Junior de League of Legends\n")
+
+        } senao {
+
+            escreva("Você é um atleta Mirim de League of Legends\n")
+
+        }
+
+    }
+}
