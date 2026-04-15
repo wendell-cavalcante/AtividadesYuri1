@@ -1,0 +1,27 @@
+programa {
+
+    funcao inicio() {
+
+        real valorPix
+        real saldoConta = 300
+        logico chequeEspecial = falso
+        real valorChequeEspecial = 500
+
+        escreva("Saldo da conta: ", saldoConta, "\n")
+        escreva("Usuário possui cheque especial? ", chequeEspecial, "\n")
+        escreva("Qual o valor do Pix que você deseja enviar?\n")
+
+        leia(valorPix)
+
+        se (valorPix <= saldoConta) {
+            escreva("Pix enviado com sucesso!\n")
+
+        } senao se (chequeEspecial e valorPix <= saldoConta + valorChequeEspecial) {
+            escreva("Pix enviado com sucesso utilizando cheque especial!\n")
+
+        } senao se (nao chequeEspecial) {
+            escreva("Saldo insuficiente para realizar o Pix.\n")
+        }
+
+    }
+}
