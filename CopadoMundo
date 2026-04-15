@@ -1,0 +1,26 @@
+programa {
+
+    funcao inicio() {
+
+        real saldoConta
+        real valorIngresso = 25000
+        real valorFaltante
+
+        escreva("Preço para assistir a Copa do Mundo 2026: R$ 25.000,00\n")
+        escreva("Qual o saldo que você tem em sua conta?\n")
+
+        leia(saldoConta)
+
+        se (saldoConta >= 25000) {
+
+            escreva("Partiu América do Norte\n")
+
+        } senao {
+
+            valorFaltante = valorIngresso - saldoConta
+            escreva("Faltam R$ ", valorFaltante, " para você conseguir ir assistir a copa do mundo\n")
+
+        }
+
+    }
+}
