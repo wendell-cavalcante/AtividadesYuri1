@@ -1,0 +1,26 @@
+programa {
+
+    funcao inicio() {
+
+        inteiro acoes
+
+        escreva("Verificador de Dividendos\n")
+        escreva("Informe quantas ações você deseja comprar, para informarmos o seu rendimento:\n")
+
+        leia(acoes)
+
+        se (acoes > 6) {
+            escreva("Estratégia de Renda Passiva OK\n")
+
+        } senao se (acoes > 4 e acoes <= 6) {
+            escreva("Rendimento médio\n")
+
+        } senao se (acoes == 0) {
+            escreva("Sem rendimento\n")
+
+        } senao {
+            escreva("Rendimento baixo\n")
+        }
+
+    }
+}
