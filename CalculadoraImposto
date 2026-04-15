@@ -1,0 +1,24 @@
+programa {
+
+    funcao inicio() {
+
+        real valor
+        real imposto
+
+        escreva("Digite o valor do produto em dolares:\n")
+        leia(valor)
+
+        se (valor > 50) {
+
+            imposto = valor * 0.60
+
+        } senao {
+
+            imposto = valor * 0.17
+
+        }
+
+        escreva("Imposto: ", imposto, "\n")
+
+    }
+}
