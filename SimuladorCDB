@@ -1,0 +1,32 @@
+
+    programa {
+  funcao inicio() {
+
+    real valor
+    real prazoMeses
+
+    escreva("Qual valor você deseja investir?\n")
+    leia(valor)
+
+    escreva("Qual o prazo em meses?\n")
+    leia(prazoMeses)
+
+    se (prazoMeses <= 0) {
+
+      escreva("Prazo inválido! O prazo deve ser maior que zero.\n")
+
+    } senao {
+
+      se (prazoMeses >= 12) {
+
+        escreva("Taxa de rendimento 12% ao ano.\n")
+
+      } senao {
+
+        escreva("Taxa de rendimento 8% ao ano.\n")
+        
+      }
+    }
+
+  }
+}
