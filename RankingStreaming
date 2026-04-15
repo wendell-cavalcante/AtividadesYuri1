@@ -1,0 +1,29 @@
+programa {
+
+    funcao inicio() {
+
+        inteiro telas
+
+        escreva("Quantas telas deseja usar:\n")
+        leia(telas)
+
+        se (telas == 1) {
+
+            escreva("Plano Mobile\n")
+
+        } senao se (telas == 2) {
+
+            escreva("Plano Padrao\n")
+
+        } senao se (telas == 4) {
+
+            escreva("Plano Premium\n")
+
+        } senao {
+
+            escreva("Opcao invalida\n")
+
+        }
+
+    }
+}
